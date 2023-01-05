@@ -7,31 +7,30 @@
     <title>Promise</title>
     <style type="text/css">
     *{ 
-        background-color: darkslateblue;
-        color: white;
+        background-color: lightgray;
+        color: black;
     }
     div{
         color: black;
     }
     pre{
        font-size: 18px;
-        color: white;
+        color:black;
     }
     h1{
-      color: red;
-      font-family: cursive;
+      color:tomato;
+      
 
     }
     h2{
-      color: gold;
+      color: black;
     }
     .h2{
-        color: cyan;
-        font-family: cursive;
-        font-size: larger;
+        color: blueviolet;
+        
     }
     .head{
-        color: gold;
+        color: black;
     }
     
     </style>
@@ -44,13 +43,13 @@
     <div class="q">
         <pre>1.Write one example explaining how you can write a callback function.</pre>
     </div>   
-       <pre class="ans"><span style="color:red; font-weight: bolder;">Answer:</span>function one(name,sumOfAdd){
+       <pre class="ans"><span style="color:tomato; font-weight: bolder;">Answer:</span>function one(name,sumOfAdd){
         console.log(`${name} you got ${sumOfAdd} out of 80.`);
        }
        function two(a,b){
           return a+b;
        }
-       one("krishna",two(20,40));</pre>
+       one("ABC",two(20,40));</pre>
     <hr>
     <div class="q"><pre>2.Write a callback function to print numbers from 1 to 7, in which 1 should be printed after 1 sec, 2 should be printed after 2 sec, 3 should be printed after 3 sec, and so on. 
 
@@ -64,7 +63,7 @@
         6
         7</pre>
         </div>
-           <pre class="ans"> <span style="color:red;">Answer:</span>function one(){
+           <pre class="ans"> <span style="color:tomato;">Answer:</span>function one(){
             let count=1;
             setTimeout(()=>{
                 console.log(count++);
@@ -100,7 +99,7 @@
         5
         6
         7</pre>
-        <pre class="ans"><span style="color:red;">Answer:</span>const promise=new Promise((resolve,reject)=>{
+        <pre class="ans"><span style="color:tomato;">Answer:</span>const promise=new Promise((resolve,reject)=>{
             resolve();
         })
         promise
@@ -158,7 +157,7 @@
         <hr>
     <div class="q"><pre>4.Create a promise function accepting an argument, if yes is passed to the function then it should go to resolved state and print Promise Resolved, and if nothing is passed 
         then it should go to reject the state and catch the error and print Promise Rejected.</pre>
-        <pre class="ans"><span style="color:red;">Answer:</span>const promise=new Promise((resolve,reject)=>{
+        <pre class="ans"><span style="color:tomato;">Answer:</span>const promise=new Promise((resolve,reject)=>{
             let a=10;
             if(a>5){
             resolve("promise resolved");
@@ -176,7 +175,7 @@
               })</pre>
         <hr>
     <div class="q"><pre>5.Create examples to explain callback function</pre>
-        <pre class="ans"><span style="color:red;">Answer:</span>function one(two){
+        <pre class="ans"><span style="color:tomato;">Answer:</span>function one(two){
             console.log("I am function one");
             two();
         }
@@ -185,7 +184,7 @@
         })</pre>
         <hr>
     <div class="q"><pre>6.Create examples to explain callback hell function</pre>
-        <pre class="ans"><span style="color:red;">Answer:</span>let getBeef=function (user,nxtStep){
+        <pre class="ans"><span style="color:tomato;">Answer:</span>let getBeef=function (user,nxtStep){
             console.log(user);
             nxtStep("raw beef");
         }
@@ -213,7 +212,7 @@
         });</pre>
         <hr>
     <div class="q"><pre>7.Create examples to explain promises function:</pre>
-        <pre class="ans"><span style="color:red;">Answer:</span>let promise = new Promise((resolve,reject)=>{
+        <pre class="ans"><span style="color:tomato;">Answer:</span>let promise = new Promise((resolve,reject)=>{
             resolve("AM NOW RESOLVED");
             reject("404_ERROR_");
         });
@@ -226,7 +225,7 @@
               })</pre>
         <hr>
     <div class="q"><pre>8.Create examples to explain async await function:</pre>
-        <pre class="ans"><span style="color:red;">Answer:</span>async function data(){
+        <pre class="ans"><span style="color:tomato;">Answer:</span>async function data(){
             const url="https://jsonplaceholder.typicode.com/todos";
             let ans =await fetch(url);
             console.log(ans);
@@ -234,7 +233,7 @@
         data();</pre>
         <hr>
     <div class="q"><pre>9.Create examples to explain promise.all function:</pre>
-        <pre class="ans"><span style="color:red;">Answer:</span>let promise = new Promise((resolve,reject)=>{
+        <pre class="ans"><span style="color:tomato;">Answer:</span>let promise = new Promise((resolve,reject)=>{
             let apple=180;
              setTimeout(()=>{
                 if(apple==180){
